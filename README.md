@@ -5,4 +5,4 @@
 - **UI Components:** [shadcn/ui](https://ui.shadcn.com)
 - **Charts:** [Tremor](https://www.tremor.so/)
 - **Authentication & User Management:** [Clerk](https://clerk.com)
-- **Database:** [Firestore](https://firebase.google.com
+- **Database:** [Firestore](https://firebase.google.com)
