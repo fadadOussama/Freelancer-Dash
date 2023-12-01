@@ -1,6 +1,13 @@
 import { Skeleton } from "@/components/ui/skeleton";
+import { auth } from "@clerk/nextjs";
 
 export default function Loading() {
+  const { userId } = auth();
+
+  if (!userId) {
+    return <></>;
+  }
+
   return (
     <main className="case">
       <div className="mt-10">
