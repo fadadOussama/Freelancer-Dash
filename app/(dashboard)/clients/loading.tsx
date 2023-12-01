@@ -1,6 +1,13 @@
 import { Skeleton } from "@/components/ui/skeleton";
+import { auth } from "@clerk/nextjs";
 
 export default function Loading() {
+  const { userId } = auth();
+
+  if (!userId) {
+    return <></>;
+  }
+
   return (
     <div className="case">
       <div className="mt-10 flex sm:flex-row flex-col gap-y-5 justify-between sm:items-end items-center">
